@@ -1,0 +1,2 @@
+# Normaliza fin de línea a LF en el repositorio (evita choques Windows/Linux en CI)
+* text=auto eol=lf
