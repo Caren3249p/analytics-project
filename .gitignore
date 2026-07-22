@@ -22,6 +22,9 @@ dist/
 .coverage
 htmlcov/
 
+# Notas de contexto personales (no forman parte del entregable)
+CONTEXTO-LAB.md
+
 # Editores / SO
 .vscode/
 .idea/
