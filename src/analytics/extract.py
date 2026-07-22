@@ -16,4 +16,12 @@ def cargar_csv(ruta: str) -> pd.DataFrame:
         FileNotFoundError: si el archivo no existe en la ruta indicada.
         ValueError: si el archivo existe pero no contiene filas de datos.
     """
-    raise NotImplementedError
+    # pd.read_csv() ya lanza FileNotFoundError por sí mismo si la ruta no existe,
+    # por lo que no hace falta comprobar la existencia del archivo manualmente.
+    df = pd.read_csv(ruta)
+
+    # Un CSV con solo encabezados produce un DataFrame sin filas: df.empty es True.
+    if df.empty:
+        raise ValueError(f"El archivo '{ruta}' no contiene filas de datos.")
+
+    return df
