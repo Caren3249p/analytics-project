@@ -2,10 +2,11 @@
 name = "analytics-project"
 version = "0.1.0"
 description = "Proyecto del semestre — Analítica de Datos (pipeline sobre el dataset Olist)."
-readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "joblib>=1.6.0",
     "pandas>=2.2",
+    "scikit-learn>=1.9.1",
 ]
 
 [project.optional-dependencies]
