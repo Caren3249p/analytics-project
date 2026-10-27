@@ -30,3 +30,4 @@ CONTEXTO-LAB.md
 .idea/
 .DS_Store
 Thumbs.db
+models/*.joblib
